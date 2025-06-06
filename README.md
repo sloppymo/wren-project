@@ -1,54 +1,56 @@
-# Wren Terminal
+# WREN Project
 
-**Copyright © 2025 Forest Within Therapeutic Services. All rights reserved.**
+**Copyright © 2025**
 
 ## Overview
 
-Wren Terminal is an AI-powered therapeutic conversation interface designed to facilitate meaningful interactions in a simple terminal-style interface. The application uses advanced natural language processing to provide responsive, context-aware conversations. Now featuring Shadowrun RPG multiplayer functionality for collaborative role-playing sessions.
+WREN (Web-based Runtime Environment Network) is a backend service framework designed to support interactive terminal applications and data processing workflows. The project implements a robust API layer with Python-based runtime environments for executing commands, processing data, and supporting associated frontend interfaces.
 
 ## Features
 
-- **Advanced AI Integration**: Leverages OpenAI's GPT models for natural, context-aware conversations
-- **Terminal-Style Interface**: Clean, distraction-free interaction experience
-- **Conversation Memory**: Maintains context across multiple exchanges
-- **Real-Time Streaming**: Token-by-token streaming for immediate feedback
-- **Persistent Storage**: Conversation history is saved and retrievable
-- **Robust Error Handling**: Graceful handling of API issues with informative feedback
-- **Security**: API key rotation, secure storage, and protection against exposing sensitive information
-- **Shadowrun RPG Multiplayer**:
-  - Role-based UI with GM, Player, and Observer permissions
-  - Specialized commands: /scene, /roll, /summon, /echo, and more
-  - Real-time session synchronization for collaborative play
-  - Dynamic scene management with entity tracking
-  - Dedicated "Shadowrun Barren" theme
+- **RESTful API**: Complete backend API service for terminal and data operations
+- **Python Runtime Environment**: Secure execution environment for commands
+- **Real-Time Processing**: Server-sent events for streaming responses
+- **Authentication System**: Secure user management and session handling
+- **Database Integration**: Persistent storage for user data and session information
+- **Extensible Architecture**: Plugin system for custom command handlers
 
 ## Technical Architecture
 
 ### Backend
-- Flask-based RESTful API service
-- Direct OpenAI API integration via httpx (avoiding SDK compatibility issues with Python 3.13)
-- SQLite database for persistent conversation and RPG session storage
-- Server-Sent Events (SSE) for streaming responses and real-time updates
-- Specialized RPG command routing and processing
+- Python-based API server
+- RESTful endpoint design
+- SQLite/PostgreSQL database support
+- Containerized runtime environments
+- WebSocket and SSE support for real-time communication
 
-### Frontend
-- Next.js React application
-- Clerk for authentication and user session management
-- Clean terminal-style UI with responsive design
-- Modular RPG components for session management, scene tracking, and entity visualization
-- Role-based UI rendering with specialized command access
+### Integration
+- Compatible with frontend terminal interfaces
+- API documentation with OpenAPI/Swagger
+- Client libraries for multiple languages
+- Deployment configurations for cloud environments
 
-## License & Usage Restrictions
+## Development
 
-This software is proprietary and confidential. Unauthorized copying, modification, distribution, or use is strictly prohibited. This software is licensed exclusively to Forest Within Therapeutic Services and may not be used, copied, modified, or distributed without express written permission.
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-## Contact
+# Configure environment
+cp .env.example .env
 
-For inquiries regarding this software, please contact:
+# Run development server
+python -m backend.app
+```
 
-**Forest Within Therapeutic Services**  
-Website: [forestwithin.com](https://forestwithin.com)
+## License
+
+MIT License
 
 ---
 
 *All trademarks and service marks are the property of their respective owners.*
+=======
+# wren-project
+WREN: Backend service framework that powers web-based terminal applications. Features Python runtime environments, RESTful APIs, and real-time data processing capabilities. Designed to integrate with frontend interfaces while maintaining secure, scalable architecture for cloud deployment.
+>>>>>>> 238aea7ff30c8e9a5579f3eef35d421559a56ce5
